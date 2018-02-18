@@ -2,6 +2,10 @@
 
 [Docker](https://www.docker.com) build container containing the dependencies required to build [OpenTTD](https://www.openttd.org/).
 
+## Limitations
+
+Currently the container only contains dependencies to build OpenTTD for Windows x64.
+
 ## Requirements
 
 To use this build container you must have [Docker](https://www.docker.com) installed.
