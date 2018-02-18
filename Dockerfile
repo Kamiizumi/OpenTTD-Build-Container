@@ -4,3 +4,4 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D43A795B73B16ABE964
 RUN apt-get update
 RUN apt-get install -y mxe-x86-64-w64-mingw32.static-gcc mxe-x86-64-w64-mingw32.static-zlib mxe-x86-64-w64-mingw32.static-libpng mxe-x86-64-w64-mingw32.static-lzo mxe-x86-64-w64-mingw32.static-freetype mxe-x86-64-w64-mingw32.static-xz mxe-x86-64-w64-mingw32.static-icu4c
 RUN PATH=/usr/lib/mxe/usr/bin:$PATH
+RUN cd /usr/lib/mxe/usr/x86_64-w64-mingw32.static/lib && mv libsicudt.a libsicudt.a.old && ln -s sicudt.a /usr/lib/mxe/usr/x86_64-w64-mingw32.static/lib/libsicudt.a
