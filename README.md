@@ -25,6 +25,8 @@ To use this build container you must have [Docker](https://www.docker.com) insta
 
 To build a Windows x64 version of OpenTTD perform the following steps:
 
+> The following instructions are based on the documentation on the [OpenTTD Wiki](https://wiki.openttd.org/Cross_Compiling#MXE_.28M_cross_environment.29).
+
 1. Run the container interactively, mounting the OpenTTD source code:
 
     `docker run -it -v C:\path\to\source:/src openttd-build /bin/bash`
